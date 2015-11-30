@@ -1,69 +1,100 @@
-@charset "UTF-8";
-
+@charset "utf-8";
 /*!
- *	Михаил Драгункин (contact@unsektor.com)
+ *	Михаил Драгункин <contact@unsektor.com>
+ *	Made with love.
  */
-
 * {
-  margin: 0;
-  padding: 0;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+html:before {
+	content: '.';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	width: 0;
+	visibility: hidden;
+	margin-right: -0.25em;
 }
 
 body {
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  font-size: 12px;
-  color: #ccc;
-
+	display: inline-block;
+	vertical-align: middle;
+	
+	
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-shadow: 1px 1px 0px #fefefe;
+	font-size: 12px;
+	line-height: 3em;
 }
 
-body > main {
-  width: 100%;
-  height: 105px;
-
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  margin: auto;
-  text-align: center;
+body > h1 {
+	position: relative;
+	z-index: 100;
+	font-size: 3.5em;
+	font-weight: 400;
+	color: #444;
 }
 
-main > img {
-  display: block;
-  margin: 0 auto;
-  pointer-events: none;
+body > p {
+	position: relative;
+	z-index: 50;
+	font-size: 1.5em;
+	font-weight: 100;
+	color: #bbb;
 }
 
-@media (max-width: 500px) {
-  main > img {
-  width: 80%;
-  }
+body > p.text {
+	font-size: 1.2em;
+	font-weight: 300;
+	color: #999;
+	line-height: 1.3em;
+	margin-top: 1em;
 }
 
-main > a {
-  display: inline-block;
-  font-weight: 200;
-  font-size: 1.1em;
-  letter-spacing: 0.5px;
-  color: inherit;
-  text-decoration: none;
-
-  margin-top: 14px;
-  -webkit-transition: color 0.2s ease;
+body > p > a {
+	border-bottom: 1px dotted #ddd;
+	text-decoration: none;
+	color: #bbb;
 }
 
-main > a:hover {
-  color: #222;
+body > a {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+	color: #ccc;
+	
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	
+	-webkit-animation-delay: .8s;
+	-moz-animation-delay: .8s;
+	-o-animation-delay: .8s;
+	-ms-animation-delay: .8s;
+	animation-delay: .8s;
 }
 
-:not(a) {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+body > a:hover {
+	color: #199A91;
 }
+
+::selection {
+	background: #000;
+}
+
+::-moz-selection {
+	background: #333;
+	color: white;
+	text-shadow: 1px 1px 0px #000;
+}
+/* updated 1448913000 */
