@@ -1,0 +1,25 @@
+{
+  "name": "unsektor",
+  "description": "Михаил Драгункин web-site openning teaser/announce page.",
+  "main": "index.js",
+  "authors": [
+    "Михаил Драгункин"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "md",
+    "unsektor"
+  ],
+  "homepage": "www.unsektor.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "^3.5.2"
+  }
+}

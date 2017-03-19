@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/*!
+ *	@author Михаил Драгункин <contact@unsektor.com>
+ *	Made with love.
+ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+
+  &:before {
+    content: '.';
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    margin-right: -0.25em;
+    vertical-align: middle;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 2.4vw;
+  }
+}
+
+body {
+  display: inline-block;
+  vertical-align: middle;
+
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-shadow: 1px 1px 0 #fefefe;
+  //line-height: 3em;
+
+  padding: 10px;
+  & h1 {
+    position: relative;
+    z-index: 100;
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: #444;
+  }
+
+  & p {
+    position: relative;
+    z-index: 50;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #bbb;
+    //margin: 2px 0;
+
+    &.animation-delay-800 {
+      animation-delay: .8s;
+    }
+
+    & a.contact {
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      color: #ccc;
+
+      font-size: 1rem;
+
+      transition: color 0.3s ease;
+
+
+      &:hover {
+        color: #199A91;
+      }
+    }
+  }
+}
+
+::selection {
+  background: #000;
+}
+
+::-moz-selection {
+  background: #333;
+  color: white;
+  text-shadow: 1px 1px 0 #000;
+}
