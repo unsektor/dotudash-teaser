@@ -22,7 +22,7 @@ _____________________________/\\\____________
         Language:       Russian / English
         Standards:      HTML5, CSS3, Alien Technologies
         Software:       JetBrains PhpStorm, Panic Coda 2,
-			            MacRabbit Espresso, Bohemian Coding Sketch
+                        MacRabbit Espresso, Bohemian Coding Sketch
 
     /* MORE */
         Read more:      https://vk.com/unsektor

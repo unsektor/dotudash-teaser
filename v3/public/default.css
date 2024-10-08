@@ -1,0 +1,99 @@
+@charset "utf-8";
+/*!
+ * Михаил Драгункин <contact@unsektor.com>
+ * Made with love.
+ */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+html:before {
+  content: '.';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 0;
+  visibility: hidden;
+  margin-right: -0.25em;
+}
+
+body {
+  display: inline-block;
+  vertical-align: middle;
+
+
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-shadow: 1px 1px 0px #fefefe;
+  font-size: 12px;
+  line-height: 3em;
+}
+
+body > h1 {
+  position: relative;
+  z-index: 100;
+  font-size: 3.5em;
+  font-weight: 400;
+  color: #444;
+}
+
+body > p {
+  position: relative;
+  z-index: 50;
+  font-size: 1.5em;
+  font-weight: 100;
+  color: #bbb;
+}
+
+body > p.text {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #999;
+  line-height: 1.3em;
+  margin-top: 1em;
+}
+
+body > p > a {
+  border-bottom: 1px dotted #ddd;
+  text-decoration: none;
+  color: #bbb;
+}
+
+body > a {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  color: #ccc;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  -webkit-animation-delay: .8s;
+  -moz-animation-delay: .8s;
+  -o-animation-delay: .8s;
+  -ms-animation-delay: .8s;
+  animation-delay: .8s;
+}
+
+body > a:hover {
+  color: #199A91;
+}
+
+::selection {
+  background: #000;
+}
+
+::-moz-selection {
+  background: #333;
+  color: white;
+  text-shadow: 1px 1px 0px #000;
+}
